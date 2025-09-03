@@ -42,7 +42,7 @@ const About = () => {
 
                 <div className="about-visual">
           <div className="support-banner">
-            <img src="public/images/WhatsApp Image 2025-08-29 at 20.17.50_b533c87d.jpg" alt="Customer Support Representative" className="support-image" />
+            <img src="/images/WhatsApp Image 2025-08-29 at 20.17.50_b533c87d.jpg" alt="Customer Support Representative" className="support-image" />
             <div className="support-overlay">
               <div className="support-item">
                 <div className="support-icon">⚙️</div>
