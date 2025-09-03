@@ -1,0 +1,461 @@
+.contact {
+  background: #0f1419;
+  padding: 80px 0;
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+/* Top section: Form and Contact Details side by side */
+.top-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: stretch;
+}
+
+.contact-form-section,
+.contact-details {
+  background: #1a202c;
+  border: 2px solid #2d3748;
+  padding: 45px;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(79, 172, 254, 0.15);
+  height: fit-content;
+  transition: all 0.3s ease;
+  min-height: 100%;
+}
+
+.contact-form-section:hover,
+.contact-details:hover {
+  border-color: #4facfe;
+  box-shadow: 0 25px 70px rgba(79, 172, 254, 0.25);
+}
+
+.contact-form-section h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #e2e8f0;
+  line-height: 1.3;
+}
+
+.contact-intro,
+.contact-info {
+  color: #cbd5e0;
+  line-height: 1.7;
+  margin-bottom: 25px;
+  font-size: 1.1rem;
+}
+
+/* Success and Error Messages */
+.success-message,
+.error-message {
+  padding: 15px 20px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.success-message {
+  background-color: #48bb78;
+  color: white;
+  border: 2px solid #38a169;
+}
+
+.error-message {
+  background-color: #f56565;
+  color: white;
+  border: 2px solid #e53e3e;
+}
+
+/* Popup Styles */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background: #1a202c;
+  border: 2px solid #4facfe;
+  border-radius: 15px;
+  max-width: 500px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 25px 70px rgba(79, 172, 254, 0.4);
+}
+
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 25px 10px;
+  border-bottom: 1px solid #2d3748;
+}
+
+.popup-header h3 {
+  margin: 0;
+  color: #e2e8f0;
+  font-size: 1.5rem;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  color: #cbd5e0;
+  font-size: 1.8rem;
+  cursor: pointer;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.close-btn:hover {
+  background-color: #2d3748;
+}
+
+.popup-body {
+  padding: 20px 25px 25px;
+}
+
+.popup-body p {
+  color: #cbd5e0;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.email-instructions {
+  margin-top: 20px;
+  padding: 15px;
+  background: rgba(79, 172, 254, 0.1);
+  border-radius: 8px;
+  border: 1px solid rgba(79, 172, 254, 0.3);
+}
+
+.email-btn {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: transform 0.3s ease;
+  display: block;
+  margin: 10px 0;
+}
+
+.email-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(79, 172, 254, 0.4);
+}
+
+.contact-form {
+  background: transparent;
+  border: none;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none;
+  height: fit-content;
+  transition: none;
+}
+
+.contact-form:hover {
+  border-color: transparent;
+  box-shadow: none;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  margin-bottom: 25px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group.full-width {
+  grid-column: 1 / -1;
+  margin-bottom: 30px;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: #e2e8f0;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  background: #2d3748;
+  border: 2px solid #4a5568;
+  color: #e2e8f0;
+  padding: 15px 20px;
+  border-radius: 12px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #4facfe;
+  box-shadow: 0 0 0 4px rgba(79, 172, 254, 0.15);
+  background: #1a202c;
+}
+
+.radio-group {
+  display: flex;
+  gap: 25px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.radio-group label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: normal;
+  color: #cbd5e0;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.radio-group label:hover {
+  background: #2d3748;
+}
+
+.contact-details h4,
+.contact-details h5 {
+  font-weight: 700;
+  color: #e2e8f0;
+  margin-bottom: 12px;
+}
+
+.contact-details h4 {
+  font-size: 1.4rem;
+  margin-top: 35px;
+  color: #4facfe;
+}
+
+.contact-details h4:first-child {
+  margin-top: 0;
+}
+
+.contact-details h5 {
+  font-size: 1.2rem;
+  margin-top: 25px;
+}
+
+.contact-details p {
+  color: #cbd5e0;
+  margin-bottom: 6px;
+  font-size: 1rem;
+}
+
+.contact-details .payment-image {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.contact-details .payment-img {
+  width: 100%;
+  height: 660px;
+  max-width: 420px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(79, 172, 254, 0.3);
+  border: 2px solid #4facfe;
+}
+
+.office {
+  margin-bottom: 25px;
+  padding: 20px;
+  background: #2d3748;
+  border: 1px solid #4a5568;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.office:hover {
+  background: #374151;
+  border-color: #4facfe;
+}
+
+/* Banking info section - full width at bottom */
+.banking-info {
+  background: #1a202c;
+  border: 2px solid #2d3748;
+  padding: 45px;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(79, 172, 254, 0.15);
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.banking-info:hover {
+  border-color: #4facfe;
+  box-shadow: 0 25px 70px rgba(79, 172, 254, 0.25);
+}
+
+.banking-info h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #e2e8f0;
+  margin-bottom: 30px;
+  text-align: center;
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.banking-intro {
+  color: #cbd5e0;
+  line-height: 1.7;
+  margin-bottom: 40px;
+  font-size: 1.1rem;
+  text-align: center;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+
+.bank-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  height: 100%;
+}
+
+.bank-section {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.bank-details h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #4facfe;
+  margin: 0 0 25px 0;
+  text-align: center;
+  padding: 20px;
+  background: #2d3748;
+  border-radius: 12px;
+  border: 2px solid #4a5568;
+}
+
+.bank-info {
+  background: #2d3748;
+  border: 2px solid #4a5568;
+  padding: 35px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bank-info:hover {
+  background: #374151;
+  border-color: #4facfe;
+  box-shadow: 0 10px 30px rgba(79, 172, 254, 0.2);
+}
+
+.bank-info p {
+  color: #cbd5e0;
+  margin-bottom: 12px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.bank-info p strong {
+  color: #e2e8f0;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .contact-content {
+    gap: 40px;
+  }
+  
+  .top-section {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .radio-group {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .contact-form-section,
+  .contact-details,
+  .banking-info {
+    padding: 25px;
+  }
+  
+  .contact-form-section h3 {
+    font-size: 1.5rem;
+  }
+  
+  .banking-info h3 {
+    font-size: 1.4rem;
+  }
+  
+  .bank-details {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .bank-info {
+    padding: 20px;
+  }
+  
+  .bank-details h4 {
+    font-size: 1.2rem;
+    padding: 15px;
+  }
+  
+  .contact-details .payment-img {
+    max-width: 250px;
+  }
+  
+  .banking-intro {
+    margin-bottom: 25px;
+  }
+}

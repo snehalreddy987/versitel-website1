@@ -1,0 +1,171 @@
+.services {
+  background: #0f1419;
+}
+
+.services-intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 60px;
+}
+
+.services-description {
+  font-size: 1.2rem;
+  color: #e2e8f0;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+.services-explanation {
+  color: #cbd5e0;
+  line-height: 1.6;
+}
+
+.services-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 80px;
+}
+
+.step-card {
+  background: #1a202c;
+  border: 1px solid #2d3748;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.step-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 60px rgba(79, 172, 254, 0.2);
+}
+
+.step-number {
+  position: absolute;
+  top: -15px;
+  left: 30px;
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.step-card h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #e2e8f0;
+  margin-top: 20px;
+}
+
+.step-card p {
+  color: #cbd5e0;
+  line-height: 1.6;
+}
+
+.competitive-rates-section {
+  margin-top: 80px;
+  background: #1a202c;
+  border: 1px solid #2d3748;
+  border-radius: 20px;
+  padding: 60px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.rates-banner {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.rates-content h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #e2e8f0;
+  line-height: 1.3;
+}
+
+.rates-content > p {
+  font-size: 1.1rem;
+  color: #cbd5e0;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.quality-features {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.quality-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.quality-icon {
+  font-size: 2.5rem;
+  min-width: 60px;
+}
+
+.quality-item h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #e2e8f0;
+}
+
+.quality-item p {
+  color: #cbd5e0;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.rates-visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.rates-image {
+  width: 100%;
+  height: 800px;
+  max-width: 500px;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(79, 172, 254, 0.3);
+  object-fit: cover;
+  border: 3px solid #4facfe;
+  transition: all 0.3s ease;
+}
+
+.rates-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 25px 60px rgba(79, 172, 254, 0.4);
+}}
+
+@media (max-width: 768px) {
+  .services-steps {
+    grid-template-columns: 1fr;
+  }
+  
+  .rates-banner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .competitive-rates-section {
+    padding: 40px 20px;
+  }
+}
