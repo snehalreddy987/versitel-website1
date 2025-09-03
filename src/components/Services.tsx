@@ -86,7 +86,7 @@ const Services = () => {
               </div>
             </div>
             <div className="rates-visual">
-              <img src="/images/WhatsApp Image 2025-08-29 at 20.32.50_3c569714.jpg" alt="Business Team" className="rates-image" />
+              <img src="/images/services.jpg" alt="Business Team" className="rates-image" />
             </div>
           </div>
         </div>

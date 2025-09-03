@@ -6,31 +6,31 @@ const Slideshow = () => {
   
   const slides = [
     {
-      image: '/images/WhatsApp Image 2025-08-29 at 15.10.31_878d5429.jpg',
+      image: '/images/slide1.jpg',
       alt: 'Empty Image 1',
       title: 'Slide 1',
       description: 'This is the first slide'
     },
     {
-      image: '/images/WhatsApp Image 2025-08-29 at 15.12.37_7a8573a6.jpg',
+      image: '/images/slide2.jpg',
       alt: 'Empty Image 2', 
       title: 'Slide 2',
       description: 'This is the second slide'
     },
     {
-      image: '/images/WhatsApp Image 2025-08-29 at 15.15.41_d8289f33.jpg',
+      image: '/images/slide3.jpg',
       alt: 'Empty Image 3', 
       title: 'Slide 3',
       description: 'This is the third slide'
     },
     {
-      image: '/images/WhatsApp Image 2025-08-29 at 15.19.29_9e5f2058.jpg',
+      image: '/images/slide4.jpg',
       alt: 'Empty Image 4', 
       title: 'Slide 4',
       description: 'This is the fourth slide'
     },
     {
-      image: '/images/WhatsApp Image 2025-08-29 at 20.08.50_de66c73f.jpg',
+      image: '/images/slide5.jpg',
       alt: 'Empty Image 5', 
       title: 'Slide 5',
       description: 'This is the fifth slide'

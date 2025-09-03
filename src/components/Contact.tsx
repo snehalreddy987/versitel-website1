@@ -239,7 +239,7 @@ This message was sent from the Versitel contact form.`;
               </div>
               
               <div className="payment-image">
-                <img src="/images/WhatsApp Image 2025-08-29 at 19.57.45_ce92e8b3.jpg" alt="Payment Processing" className="payment-img" />
+                <img src="/images/contact_payment_processing.jpg" alt="Payment Processing" className="payment-img" />
               </div>
             </div>
           </div>

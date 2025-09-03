@@ -35,7 +35,7 @@ const Hero = () => {
               </div>
               <div className="hero-visual">
                 <div className="hero-image-placeholder">
-                  <img src="/images/WhatsApp Image 2025-08-29 at 20.13.28_29c84dee.jpg" alt="Customer Service Team" className="hero-image" />
+                  <img src="/images/home.jpg" alt="Customer Service Team" className="hero-image" />
                 </div>
                 <div className="hero-card">
                   <div className="stats-grid">
